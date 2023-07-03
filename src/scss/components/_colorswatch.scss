@@ -1,0 +1,28 @@
+:root {
+    --brand-orange: #df854f;
+    --brand-blue: #243746;
+    --brand-black: #231f20;
+    --brand-brown: #403E3D;
+    --brand-green: #87C770;
+  }
+  
+  $brand-orange: #df854f;
+  $brand-blue: #243746;
+  $brand-black: #231f20;
+  $brand-brown: #403E3D;
+  $brand-green: #87C770;
+
+
+  $black: var(--brand-black);
+$grey: #ECEDED;
+
+$orange: $brand-orange;
+$blue: $brand-blue;
+$white: #fff;
+
+$maroon: $orange;
+$teal: $blue;
+
+  
+  
+  $mobile: 768px;

@@ -1,0 +1,88 @@
+@import './components/variables';
+@import './components/colorswatch';
+@import './components/typography';
+@import './components/utils';
+@import './components/splash-page';
+@import './components/header';
+@import './components/lightbox';
+@import './components/form';
+@import './components/cookie-banner';
+@import './components/suites-grid.scss';
+@import './components/custom-slider.scss';
+@import './components/homepage-image-grid';
+@import './components/footer';
+@import './components/registration-form/index';
+
+::selection {
+    background: #229245;
+    color: #fff;
+}
+
+.key-building-features {
+    h3 {
+        font-family: $sans-serif;
+        font-size: 22px;
+        font-size: clamp(18px, 2vw, 22px);
+        font-weight: 500;
+    }
+    // @media (max-width: $tablet) {
+    //     .fl-row-content-wrap {
+    //         background-image: none !important;
+    //         background-color: $blue;
+    //     }
+    // }
+}
+
+// .mobile-blue-background {
+//     @media (max-width: $tablet) {
+//         .fl-row-content-wrap {
+//             background-image: none !important;
+//             background-color: $blue;
+//         }
+//     }
+// }
+
+.building-features-icon {
+    // max-height: 45px;
+    // height: 45px;
+}
+
+.orange-overlay-fixed-width {
+    max-width: 780px;
+    width: 100%;
+}
+
+.orange-overlay-fixed-width-inner {
+    max-width: 660px;
+    width: 100%;
+    @media (max-width: 1200px) {
+        max-width: 300px;
+        width: 80%;
+    }
+
+    @media (max-width: 1000px) {
+        max-width: 300px;
+        width: 80%;
+    }
+}
+
+
+body.fl-builder-edit:not(.postid-1491),
+.logged-in.admin-bar {
+    #splashPage {
+        display: none;
+    }
+}
+
+.background-pattern {
+    .fl-row-content-wrap {
+        background-size: 1500px;
+        background-repeat: repeat;
+    }
+    &.fl-node-604d923145a1d .fl-row-content-wrap {
+        background-position: bottom left;
+    }
+    &.fl-node-604d9855dde64 .fl-row-content-wrap {
+        background-position: top left;
+    }
+}

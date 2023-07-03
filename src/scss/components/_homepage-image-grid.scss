@@ -1,0 +1,13 @@
+body:not(.fl-builder-edit) {
+    .position-relative {
+        position: relative;
+    }
+
+    .eg-my-custom-grid-element-2,
+    .eg-my-custom-grid-left-label-element-2 {
+        padding: 1.2vw 2.2vw;
+        font-size: clamp(14px, 1.5vw, 25px);
+        line-height: 1;
+        margin-bottom: 4rem;
+    }
+}

@@ -1,0 +1,64 @@
+.modal-open {
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.z-index-bump {
+    z-index: 10;
+    position: relative;
+}
+
+.two-column-width {
+    .fl-module-rich-text,
+    .fl-module-heading,
+    .two-column-width-image,
+    .fl-module-button {
+        max-width: clamp(450px, 35vw, 750px);
+        width: 100%;
+        margin: 0 auto 0 1vw;
+
+        @media (max-width: $small-desktop) {
+            max-width: 80%;
+        }
+
+        @media (max-width: $tablet) {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+    &.left-aligned {
+        .fl-module-rich-text,
+        .fl-module-heading,
+        .two-column-width-image,
+        .fl-module-button {
+            margin: 0 auto 0 8%;
+
+            @media (max-width: $small-desktop) {
+                max-width: 80%;
+            }
+
+            @media (max-width: $tablet) {
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+body {
+    max-width: 100%;
+    width: 100%;
+}
+
+footer.fl-page-footer-wrap {
+    display: none !important;
+}
+
+.fl-button {
+    transition: all 0.2s ease-in-out;
+}

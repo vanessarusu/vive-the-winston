@@ -1,0 +1,36 @@
+// :root {
+//     --sans-serif: Montserrat, sans-serif;
+//     --serif: "Gilda Display", serif;
+
+//     --orange: #DB864E;
+//     --blue: #415364;
+//     --black: #101820;
+//     --grey: #ECEDED;
+//     --white: #ffffff;
+
+//     --mobile: 768px;
+
+//     --border-radius: 26px;
+
+// }
+
+
+// $black: #101820;
+// $grey: #ECEDED;
+
+// $orange: #DB864E;
+// $blue: #415364;
+// $white: #fff;
+
+// $maroon: $orange;
+// $teal: $blue;
+
+ 
+
+// $sans-serif: "Jost", Jost, Montserrat, sans-serif;
+// $serif: $sans-serif;
+
+$small-desktop: 1200px;
+$tablet: 768px;
+$mobile: var(--mobile);
+$border-radius: var(--border-radius);
