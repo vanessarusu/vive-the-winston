@@ -34,7 +34,7 @@
       position: absolute;
       right: 0;
       top: 0;
-      background: var(--brand-green);
+      background: var(--brand-blue);
       display: inline-block;
       cursor: pointer;
 
@@ -94,8 +94,8 @@
       min-height: 38px;
 
       &:hover {
-        background: var(--brand-brown);
-        color: white;
+        background: var(--brand-blue);
+        color: white !important;
       }
     }
   }

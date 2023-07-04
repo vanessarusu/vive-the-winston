@@ -1,10 +1,10 @@
 import formStyling from './form-styling';
 import customLightbox from "./custom-lightbox";
 
-import suitesGridLightbox from './suites-grid-lightbox';
-import customSlider from './custom-slider';
+// import suitesGridLightbox from './suites-grid-lightbox';
+// import customSlider from './custom-slider';
 
-import splashPage from './splash-page';
+// import splashPage from './splash-page';
 
 (function() {
 
@@ -15,20 +15,20 @@ import splashPage from './splash-page';
     }
 
 
-    if(document.querySelector(`body.page-id-${pageIds.suites}`)) {
-        const sgl = suitesGridLightbox();
-        sgl.init();
-    }
+    // if(document.querySelector(`body.page-id-${pageIds.suites}`)) {
+    //     const sgl = suitesGridLightbox();
+    //     sgl.init();
+    // }
 
-    if(document.querySelector(`body.page-id-${pageIds.home}`)) {
-        const cs = customSlider();
-        cs.init(2);
-    }
+    // if(document.querySelector(`body.page-id-${pageIds.home}`)) {
+    //     const cs = customSlider();
+    //     cs.init(2);
+    // }
 
-    if(document.querySelector(`body.page-id-${pageIds.location}`)) {
-        const cs = customSlider();
-        cs.init(6);
-    }
+    // if(document.querySelector(`body.page-id-${pageIds.location}`)) {
+    //     const cs = customSlider();
+    //     cs.init(6);
+    // }
 
     const fs = formStyling();
     const cl = customLightbox();

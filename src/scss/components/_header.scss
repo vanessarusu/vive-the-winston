@@ -1,8 +1,8 @@
 #menu-primary-menu {
     .current-menu-item {
         a {
-            font-weight: bold;
-            color: $brand-green;
+            // font-weight: bold;
+            // color: $brand-green;
         }
     }
     li {
@@ -32,15 +32,25 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .fl-menu-mobile-flyout {
+        background: white !important;
+    }
     #menu-primary-menu {
+        background: white !important;
         padding-top: 100px;
 
         li {
             border: none;
             a {
                 padding: 20px 10px;
+                background: white;
+                color: $brand-blue !important;
             }
         }
     }
+}
+
+.fl-menu-mobile-close i {
+    // color: white;
 }

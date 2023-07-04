@@ -12,47 +12,41 @@
     position: relative;
 }
 
-.two-column-width {
-    .fl-module-rich-text,
-    .fl-module-heading,
-    .two-column-width-image,
-    .fl-module-button {
-        max-width: clamp(450px, 35vw, 750px);
-        width: 100%;
-        margin: 0 auto 0 1vw;
+.gold-angle-bg {
+    // background: url(http://localhost:8888/the-winston/wp-content/uploads/2023/07/gold-polygon-bg.svg) right top no-repeat;
+    background-size: contain;
+    position: relative;
 
-        @media (max-width: $small-desktop) {
-            max-width: 80%;
-        }
-
-        @media (max-width: $tablet) {
-            max-width: 90%;
-            margin: 0 auto;
-        }
+    .fl-photo {
+        // max-width: 600px;
+        padding: 80px 0;
     }
+    
+    @media (min-width: 1200px) {
+        .fl-col:last-of-type {
+            background: url(http://localhost:8888/the-winston/wp-content/uploads/2023/07/gold-polygon-bg-solid.png) -10% top no-repeat;
+            // padding: 80px 0;
+            position: relative;
 
-    &.left-aligned {
-        .fl-module-rich-text,
-        .fl-module-heading,
-        .two-column-width-image,
-        .fl-module-button {
-            margin: 0 auto 0 8%;
-
-            @media (max-width: $small-desktop) {
-                max-width: 80%;
-            }
-
-            @media (max-width: $tablet) {
-                max-width: 90%;
-                margin: 0 auto;
+            &:before {
+                content: '';
+                display: block;
+                background: #F2F0EB;
+                position: absolute;
+                left: 100%;
+                width: 60vw;
+                top: 0;
+                bottom: 0;
             }
         }
     }
 }
 
+
 body {
     max-width: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 footer.fl-page-footer-wrap {

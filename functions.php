@@ -10,12 +10,12 @@ require_once 'classes/class-fl-child-theme.php';
 // Actions
 add_action( 'wp_enqueue_scripts', 'FLChildTheme::enqueue_scripts', 1000 );
 
-function _woodside_assets() {
-    wp_enqueue_style( '_woodside-admin-stylesheet', get_stylesheet_directory_uri() . '/dist/css/admin.css', array(), '1.0.0', 'all' );
-    wp_enqueue_style( '_adobe-fonts', 'https://use.typekit.net/ogb6bhl.css', array(), '1.0.0', 'all' );
-    wp_enqueue_style( '_woodside-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css', array(), '1.0.0', 'all' );
+function _winston_assets() {
+    wp_enqueue_style( '_winstin-admin-stylesheet', get_stylesheet_directory_uri() . '/dist/css/admin.css', array(), '1.0.0', 'all' );
+    wp_enqueue_style( '_adobe-fonts', 'https://use.typekit.net/cni1epo.css', array(), '1.0.0', 'all' );
+    wp_enqueue_style( '_winston-stylesheet', get_stylesheet_directory_uri() . '/dist/css/bundle.css', array(), '1.0.0', 'all' );
     wp_enqueue_script( '_gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js', array(), '1.0.0', true );
-    wp_enqueue_script( '_woodside-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array(), '1.0.0', true );
+    wp_enqueue_script( '_winston-scripts', get_stylesheet_directory_uri() . '/dist/js/bundle.js', array(), '1.0.0', true );
 }
 
 function load_custom_templates() {
@@ -52,10 +52,7 @@ function my_global_builder_posts( $post_ids ) {
 
 add_filter( 'fl_builder_global_posts', 'my_global_builder_posts' );
 
-// add_action( 'customize_register', 'vive_market_customize_register' );
-
-// add_action( 'fl_before_header', 'load_custom_templates' );
-add_action('wp_enqueue_scripts', '_woodside_assets', 1000 );
+add_action('wp_enqueue_scripts', '_winston_assets', 1000 );
 
 
 

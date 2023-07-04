@@ -20,7 +20,7 @@
     background: #fff;
     outline: 0;
     border: none;
-    border-bottom: 1px solid var(--brand-brown);
+    border-bottom: 1px solid var(--brand-black);
     width: 100%;
     max-width: 100%;
     display: block;
@@ -32,8 +32,10 @@
     border-radius: 0;
 
     &[type="submit"] {
-      border: 2px solid var(--brand-brown);
-      color: var(--brand-brown);
+      // border: 2px solid var(--brand-gold);
+      background: url(http://localhost:8888/the-winston/wp-content/uploads/2023/07/btn-bg-plain.svg) center center no-repeat;
+      background-size: contain;
+      color: white;
       max-width: 240px;
       width: 100%;
       text-transform: uppercase;
@@ -46,11 +48,11 @@
       height: unset;
       margin-left: 0;
       transition: all 0.15s ease-in-out;
+      border-bottom: none;
+      // transform: skew(-20deg);
 
       &:hover {
-        background: var(--brand-green);
-        color: white;
-        border-color: var(--brand-green);
+        opacity: 0.8;
       }
     }
   }
@@ -106,7 +108,7 @@
     }
 
     input:checked + label.radio:before {
-      background-color: var(--brand-brown);
+      background-color: var(--brand-black);
     }
 
     .inline-label {

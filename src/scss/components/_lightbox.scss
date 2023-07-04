@@ -20,7 +20,9 @@ body:not(.fl-builder-edit) #lightboxForm {
   
       &:before {
         content: "";
-        background: rgba(darken($brand-brown, 20%), 0.8);
+        background:url(http://localhost:8888/the-winston/wp-content/uploads/2023/07/gold-w.svg) center center no-repeat;
+        background-size: cover;
+        background-color: rgba($brand-gold, 1);
         display: block;
         position: fixed;
         left: 0;
