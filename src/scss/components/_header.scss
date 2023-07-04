@@ -1,10 +1,5 @@
 #menu-primary-menu {
-    .current-menu-item {
-        a {
-            // font-weight: bold;
-            // color: $brand-green;
-        }
-    }
+
     li {
         &.fa {
             border: none;
@@ -49,8 +44,4 @@
             }
         }
     }
-}
-
-.fl-menu-mobile-close i {
-    // color: white;
 }
